@@ -2,10 +2,10 @@ import Carousel from "react-bootstrap/Carousel";
 
 function IndividualIntervalsExample() {
   return (
-    <Carousel variant="dark">
-      <Carousel.Item interval={500}>
+    <Carousel variant="dark" controls={false} className="w-50 m-auto">
+      <Carousel.Item interval={1000}>
         <img
-          className="d-block w-100"
+          className="d-block" // w-100
           src="https://via.placeholder.com/800x400"
           alt="First slide"
         />
@@ -14,9 +14,9 @@ function IndividualIntervalsExample() {
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={500}>
+      <Carousel.Item interval={1000}>
         <img
-          className="d-block w-100"
+          className="d-block"
           src="https://via.placeholder.com/800x400"
           alt="Second slide"
         />
@@ -25,9 +25,9 @@ function IndividualIntervalsExample() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={1000}>
         <img
-          className="d-block w-100"
+          className="d-block"
           src="https://via.placeholder.com/800x400"
           alt="Third slide"
         />

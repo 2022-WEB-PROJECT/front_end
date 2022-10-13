@@ -14,6 +14,11 @@ nav>div {
   align-items: center;
 }
 
+.slider>img {
+  text-align: center;
+  margin: auto;
+}
+
 /* .slick-arrow {
   display: inline-block;
   position: relative;
