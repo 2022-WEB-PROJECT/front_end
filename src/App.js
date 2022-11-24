@@ -6,6 +6,7 @@ import Test2 from "./components/test2";
 import Test3 from "./components/test3";
 import Nav from "./components/Nav";
 import Detail from "./components/Detail";
+import Reward from "./components/Reward";
 import "./App.css";
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/test2" element={<Test2 />} />
         <Route path="/test3" element={<Test3 />} />
         <Route path="/detail/:id" element={<Detail />} />
+        <Route path="/reward/:id" element={<Reward />} />
       </Routes>
     </div>
   );
