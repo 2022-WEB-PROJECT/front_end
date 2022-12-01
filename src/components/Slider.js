@@ -10,7 +10,7 @@ function IndividualIntervalsExample() {
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100" // w-100
-          src="https://via.placeholder.com/800x400"
+          src="https://via.placeholder.com/800x100"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -21,7 +21,7 @@ function IndividualIntervalsExample() {
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/800x400"
+          src="https://via.placeholder.com/800x100"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -32,7 +32,7 @@ function IndividualIntervalsExample() {
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/800x400"
+          src="https://via.placeholder.com/800x100"
           alt="Third slide"
         />
         <Carousel.Caption>

@@ -2,10 +2,17 @@ import Card from "react-bootstrap/Card";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Badge from "react-bootstrap/Badge";
 import { CgShoppingCart } from "react-icons/cg";
+import Modal from "react-bootstrap/Modal";
+
 export default function Reward() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div>
       <b>
@@ -72,7 +79,31 @@ export default function Reward() {
       <Button variant="outline-dark">
         <CgShoppingCart />
       </Button>
-      <Button variant="outline-dark">결제하기</Button>
+      <Button variant="outline-dark" onClick={handleShow}>
+        결제하기
+      </Button>
+      <Modal show={show} onHide={handleClose} centered>
+        {/* <Modal.Header closeButton>
+          <Modal.Title>결제하기 화면으로 넘어가시겠습니까?</Modal.Title>
+        </Modal.Header> */}
+        <Modal.Body>결제하기 화면으로 넘어가시겠습니까?</Modal.Body>
+        <Modal.Footer>
+          <Button
+            variant="primary"
+            onClick={() => {
+              setShow(false);
+              window.open("/test1", "test", "_blank");
+              window.location.replace("/");
+              // goMain();
+            }}
+          >
+            확인
+          </Button>
+          <Button variant="secondary" onClick={handleClose}>
+            취소
+          </Button>
+        </Modal.Footer>
+      </Modal>
       {/* <ToggleButtonGroup
         type="radio"
         name="options"

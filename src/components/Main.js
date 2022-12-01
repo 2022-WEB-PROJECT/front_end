@@ -8,7 +8,7 @@ export default function Main() {
     <div>
       {/* <Img /> */}
       <Slider />
-      <Pay />
+      {/* <Pay /> */}
       <Card />
     </div>
   );
