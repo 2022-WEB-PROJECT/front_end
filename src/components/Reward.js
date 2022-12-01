@@ -72,9 +72,7 @@ export default function Reward() {
       <Button variant="outline-dark">
         <CgShoppingCart />
       </Button>
-      <button>
-        <CgShoppingCart />
-      </button>
+      <Button variant="outline-dark">결제하기</Button>
       {/* <ToggleButtonGroup
         type="radio"
         name="options"
