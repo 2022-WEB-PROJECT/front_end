@@ -23,7 +23,7 @@ function GridExample() {
         <option value="newest">최신순</option>
       </select>
       <Row xs={1} md={4} className="g-4">
-        {Array.from({ length: 8 }).map((_, idx) => (
+        {Array.from({ length: 4 }).map((_, idx) => (
           <Col>
             <Card>
               <Card.Link

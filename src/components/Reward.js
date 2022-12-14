@@ -15,14 +15,23 @@ export default function Reward() {
 
   return (
     <div>
-      <div style={{ float: "left", width: "50%", "margin-right": "100px" }}>
+      <div
+        style={{
+          float: "left",
+          width: "50%",
+          "margin-right": "50px",
+          "margin-left": "100px",
+        }}
+      >
         <b>
           <h4>리워드 선택</h4>
         </b>
         <Card>
           <Card.Body>
             <input type="radio" name="yee" />
-            <Badge bg="info">12개 남음</Badge>{" "}
+            <Badge bg="info" style={{ "margin-left": "10px" }}>
+              12개 남음
+            </Badge>{" "}
             <b>
               <h4>35000원</h4>
             </b>
@@ -35,7 +44,9 @@ export default function Reward() {
         <Card>
           <Card.Body>
             <input type="radio" name="yee" />
-            <Badge bg="info">12개 남음</Badge>{" "}
+            <Badge bg="info" style={{ "margin-left": "10px" }}>
+              12개 남음
+            </Badge>{" "}
             <b>
               <h4>70000원</h4>
             </b>
@@ -48,7 +59,9 @@ export default function Reward() {
         <Card>
           <Card.Body>
             <input type="radio" name="yee" />
-            <Badge bg="info">12개 남음</Badge>{" "}
+            <Badge bg="info" style={{ "margin-left": "10px" }}>
+              12개 남음
+            </Badge>{" "}
             <b>
               <h4>70000원</h4>
             </b>
@@ -79,11 +92,15 @@ export default function Reward() {
           <option value="3">디자인 3</option>
         </select>
         <br />
-        <div style={{ "margin-top": "300px" }}>
+        <div style={{ "margin-top": "350px" }}>
           <Button variant="outline-dark">
             <CgShoppingCart />
           </Button>
-          <Button variant="outline-dark" onClick={handleShow}>
+          <Button
+            variant="outline-dark"
+            onClick={handleShow}
+            style={{ "margin-left": "25px", width: "500px" }}
+          >
             결제하기
           </Button>
           <Modal show={show} onHide={handleClose} centered>
