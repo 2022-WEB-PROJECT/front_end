@@ -8,6 +8,14 @@ function GridExample() {
     "text-decoration": "none",
     color: "black",
   };
+
+  var arr = [
+    "https://cdn-icons-png.flaticon.com/512/4091/4091968.png",
+    "https://cdn-icons-png.flaticon.com/512/2083/2083256.png",
+    "https://cdn-icons-png.flaticon.com/512/4091/4091976.png",
+    "https://cdn-icons-png.flaticon.com/512/2399/2399888.png",
+  ];
+
   return (
     <div>
       <select>
@@ -25,16 +33,13 @@ function GridExample() {
               >
                 <Card.Img
                   variant="top"
-                  src="https://via.placeholder.com/300x160"
+                  // src="https://via.placeholder.com/300x160"
+                  src={arr[idx]}
                 />
 
                 <Card.Body>
-                  <Card.Title>{idx}</Card.Title>
-                  <Card.Text>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </Card.Text>
+                  <Card.Title>회사{idx + 1}</Card.Title>
+                  <Card.Text>소개</Card.Text>
                 </Card.Body>
               </Card.Link>
             </Card>
